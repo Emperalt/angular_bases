@@ -1,0 +1,115 @@
+.buttonGeneral {
+	background-color: #f00b0b;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px 20px;
+	text-align: center;
+	color: #fbfafc;
+	font-weight:bold;
+    margin: 6px ;
+	width: 30%;
+	height: 50px ;
+	font-size: large;
+    
+}
+
+.buttonPersonaje
+{
+	background-color: #f7f2f2;
+	border: 1px solid #ffffff;
+	width: 40%;
+	height: 50px ;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 10px 20px;
+	text-align: center;
+	color: #fbfafc;
+	font-weight:bold;
+    margin: 10px ;
+}
+
+.divPersonaje{
+	background-color: #2c2424;
+	width: 450px;
+	height: 640px;
+	text-align: center;
+	margin: 20px;
+
+}
+
+.divActualizaCrea{
+	border: 1px solid #ddd;
+	width: 450px;
+	height: 500px;
+	text-align: center;
+	margin: 20px;
+
+}
+
+.labelForm{
+	display: block;
+    text-align: left;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.inputFormulario{
+	width: 65%;
+	height: 40px ;
+	border: 1px solid rgb(235, 224, 224);
+	font-size: large;
+	/* background-image: url("assets/icono_editar.png"); */
+    background-repeat: no-repeat;
+    text-indent: 20px;
+
+}
+
+.inputFormulario :active{
+	border: 5px solid rgb(240, 62, 62);
+}
+
+.divGestion{
+	
+	width: 450px;
+	margin: 20px;
+	/* display: inline; */
+
+}
+
+.titulo{
+	font-size:15px;
+	color: #979090;
+	text-align: center;
+	width: 450px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagenPersonaje{
+	width: 420px;
+	height: 500px ;
+	
+}
+
+.tituloImg{
+	color: #ffffff;
+	font-weight:bold ;
+	text-align: center	;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputBuscar{
+	width: 65%;
+	height: 40px ;
+	border-color: #ebe5e5;
+	border-top-color:#ebe5e5 ;
+	border-bottom-color:#ebe5e5 ;
+	font-size: large;
+	/* background-image: url("assets/icono_editar.png"); */
+    background-repeat: no-repeat;
+    text-indent: 20px;
+
+}
+

@@ -1,0 +1,49 @@
+<div>
+    <div class="titulo" >
+        <h1 >Listado de Personajes</h1>
+    </div>
+    
+    <div class="divGestion">
+        <input (change)="buscarPersonaje('Captain America')" [(ngModel)]="personajeBuscar" class="inputBuscar" type="text" placeholder=" Buscar"  >
+        <button (click)="nuevoModifica(1)" class="buttonGeneral">+ Nuevo </button>
+    </div>
+
+    <div *ngIf="isNuevoUpdate" class="divActualizaCrea">
+        <div class="titulo" >
+            <h1 >Nuevo Personajes</h1>
+        </div>
+        <label class="labelForm" >Nombre:</label>
+        <input class="inputFormulario" type="text" placeholder=" Nombre"  [(ngModel)]="personajeNuevo.title"  >
+
+        <label class="labelForm" >Descripcion:</label>
+        <input class="inputFormulario" type="text" placeholder=" Descripción" [(ngModel)]="personajeNuevo.body" >
+
+        <label class="labelForm">Imagen:</label>
+        <input class="inputFormulario" type="text" placeholder=" URL" [(ngModel)]="personajeNuevo.image" >
+         <br>
+        <button class="buttonGeneral"  (click)=crearPersonaje()  > Guardar </button>
+        <button (click)="cancela()" class="buttonGeneral"> Cancelar </button>
+    </div>
+
+   
+      <div *ngIf="personajes.length > 0; else elseBlock">
+         <div class="divPersonaje" *ngFor=" let personaje of personajes;">
+            <div>
+                <img class="imagenPersonaje" src="{{personaje.image}}" alt="">
+                <h3 class="tituloImg"> {{personaje.title}}</h3>
+            </div>
+            <div>
+                <button  class="buttonPersonaje" (click)="modificaPersonaje(personaje)"> 
+                    <img src="assets/icono_editar.png" height ="30" width="30" />
+                </button>
+                <button class="buttonPersonaje" (click)="eliminarPersonaje(personaje)">
+                    <img src="assets/eliminar.png" height ="30" width="30" />    
+                </button>
+            </div>
+        </div> 
+      </div>
+      <ng-template #elseBlock>
+            <p class="text-danger" >No hay resultados</p>
+      </ng-template>
+   
+</div>
